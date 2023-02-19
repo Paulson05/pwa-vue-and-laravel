@@ -11,7 +11,7 @@
     
                         <span class="" >
                             <img :src="require(`/src/assets/images/d-board/${link.imgBlack}`)" alt=""
-                                class="icon-size" style="color:#FDB022" />
+                                class="icon-size"  />
                         </span>
                         <!-- <span style="font-size:10px !important">{{ link.title }}</span> -->
           </li>
@@ -23,7 +23,7 @@
     
                         <span class="" >
                             <img :src="require(`/src/assets/images/d-board/${link.imgBlack}`)" alt=""
-                                class="icon-size" style="color:#FDB022" />
+                                class="icon-size"  />
                         </span>
                         
                         <!-- <span style="font-size:10px !important">{{ link.title }}</span> -->
