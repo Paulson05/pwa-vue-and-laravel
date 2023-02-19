@@ -3,7 +3,7 @@
       <div class="buttom-nav   ">
         <div class="menu">
         <ul class = "admin-wrapper  row-column  justify-content-between align-items-center " style="width:400px !important;">
-          <li  style="width:90px !important;"
+          <li  style="width:80px !important;"
         class="menu-item  btn nav nav-pills my-1 d-flex d ms-3 me-1 hovered "
         v-for="link in links.slice(0, 4)" :key="link.id" 
                         @click="displayView(link.id, link.termsText, link.linkRoute)"
