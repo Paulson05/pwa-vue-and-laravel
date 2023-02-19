@@ -1,9 +1,9 @@
 <template lang="html">
     <div>
-      <div class="buttom-nav   ">
+      <div class="buttom-nav   " style="position: fixed;">
         <div class="menu">
-        <ul class = "admin-wrapper  row-column  justify-content-between align-items-center " style="width:400px !important;">
-          <li  style="width:80px !important;"
+        <ul class = "admin-wrapper  row-column  justify-content-between align-items-center " style="width:410px !important;">
+          <li  style="width:10px !important;"
         class="menu-item  btn nav nav-pills my-1 d-flex d ms-3 me-1 hovered "
         v-for="link in links.slice(0, 4)" :key="link.id" 
                         @click="displayView(link.id, link.termsText, link.linkRoute)"
@@ -13,7 +13,7 @@
                             <img :src="require(`/src/assets/images/d-board/${link.imgBlack}`)" alt=""
                                 class="icon-size" style="color:#FDB022" />
                         </span>
-                        <span style="font-size:10px !important">{{ link.title }}</span>
+                        <!-- <span style="font-size:10px !important">{{ link.title }}</span> -->
           </li>
           <li  style="width:90px !important;"
         class="menu-item  btn nav nav-pills my-3 d-flex d ms-3 me-1 hovered "
@@ -26,7 +26,7 @@
                                 class="icon-size" style="color:#FDB022" />
                         </span>
                         
-                        <span style="font-size:10px !important">{{ link.title }}</span>
+                        <!-- <span style="font-size:10px !important">{{ link.title }}</span> -->
                         
          </li>
         </ul>
