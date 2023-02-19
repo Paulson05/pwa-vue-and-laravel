@@ -13,7 +13,7 @@
                             <img :src="require(`/src/assets/images/d-board/${link.imgBlack}`)" alt=""
                                 class="icon-size" style="color:#FDB022" />
                         </span>
-                        
+                        <span style="font-size:10px !important">{{ link.title }}</span>
           </li>
           <li  style="width:90px !important;"
         class="menu-item  btn nav nav-pills my-3 d-flex d ms-3 me-1 hovered "
@@ -25,6 +25,8 @@
                             <img :src="require(`/src/assets/images/d-board/${link.imgBlack}`)" alt=""
                                 class="icon-size" style="color:#FDB022" />
                         </span>
+                        
+                        <span style="font-size:10px !important">{{ link.title }}</span>
                         
          </li>
         </ul>
@@ -151,7 +153,7 @@ export default {
             display: flex;
             list-style: none;
           
-            background-color: #3655b3;
+            background-color: rgba(224, 178, 79, 0.918);
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
@@ -200,7 +202,7 @@ export default {
 
         .menu ul li a:hover .icon {
             top: 0;
-            background-color: #3655b3;
+            background-color: #b39236;
             color: #fff;
             outline: 4px #fff solid;
         }

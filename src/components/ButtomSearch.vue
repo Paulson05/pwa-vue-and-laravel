@@ -1,5 +1,5 @@
 <template lang="html">
-    <div style="background-color: red; border-radius: 5px; margin-top: ;">
+    <div style=" background-color: rgba(224, 178, 79, 0.918); border-radius: 5px; margin-top: 0 !important ;">
         <div class="col-12 d-flex justify-content-between">
        <div >
         <img
@@ -11,7 +11,7 @@
        </div>
              <div class="col-8 pt-4" >
               
-                <div class="input-group" style="background-color: red; border-radius: 5px;">
+                <div class="input-group" style="background-color: none !important; border-radius: 5px;">
               <div class="input-group-prepend">
                 <span
                   type="button"
@@ -23,14 +23,13 @@
                     alt=""
                 /></span>
               </div>
-              <div class="col-8" style="background-color:  transparent !important; border: transparent; outline: none;">
+              <div class="col-8" >
                 <input
                 type="text"
                 name="search"
                 class="form-control border-left-0 "
-                placeholder="Search"
-                aria-label="Search"
-                aria-describedby="basic-addon1"
+                placeholder="Search...."
+              
                
               />
               </div>
@@ -65,7 +64,9 @@
 
   <style>
 
-    
+    .btn {
+      background-color: rgba(33, 33, 36, 0.918);
+    }
 
 
   
