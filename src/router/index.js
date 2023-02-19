@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 import IndexView from "../views/IndexVue";
 import DashBoard from "../views/dashboard/DashBoard";
+
 import LoginPage from "@/views/auth/LoginPage.vue";
-import RegisterPage from  "@/views/auth/RegistrationPage.vue";
+import RegistrationPage from  "@/views/auth/RegistrationPage.vue";
+import UpdateUsername from  "@/views/auth/UpdateUsername.vue";
+import UpdateEmail from "@/views/auth/UpdateEmail.vue";
+import ForgetPassword from "@/views/auth/ForgetPassword.vue";
 import ProfilePage from "@/views/profile/ProfilePage.vue";
 import BuddiesPage from "@/views/pages/BuddiesPage.vue";
 import DiscoverPage from "@/views/pages/DiscoverPage.vue";
+ import SettingsPage from  "@/views/pages/SettingsPage.vue";
 const routes = [
     {
       path: "/",
@@ -38,7 +43,35 @@ const routes = [
           name: "DiscoverPage",
           component: DiscoverPage,
         },
+        {
+          path: "/setting",
+          name: "SettingsPage",
+          component: SettingsPage,
+        },
+        {
+          path: "/update-username",
+          name: "UpdateUsername",
+          component: UpdateUsername,
+        },
+        {
+          path: "/update-email",
+          name: "UpdateEmail",
+          component: UpdateEmail,
+        },
 
+        {
+          path: "/update-email",
+          name: "UpdateEmail",
+          component: UpdateEmail,
+        },
+        {
+          path: "/forgetpassword",
+          name: " ForgetPassword",
+          component:  ForgetPassword,
+        },
+
+        
+       
         
         
        
@@ -54,8 +87,8 @@ const routes = [
     },
     {
       path: "/register",
-      name: "RegisterPage",
-      component: RegisterPage,
+      name: "RegistrationPage",
+      component: RegistrationPage,
     },
   
   ];

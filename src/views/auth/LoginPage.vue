@@ -6,56 +6,12 @@
           <div
             class="position-absolute d-flex w-100 pt-4 px-4 align-items-center justify-content-between"
           >
-            <div class="">
-              <img
-                :src="require('/src/assets/images/logo.svg')"
-                alt="logo"
-                width="210"
-              />
-            </div>
-            <div
-              class="lang"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              <p>
-                <img
-                  :src="require('/src/assets/images/glob.svg')"
-                  alt="logo"
-                  width="20"
-                />
-                <span class="mx-1">English</span>
-              </p>
-            </div>
+            
+          
           </div>
         </div>
       </div>
-      <div class="container-fluid position-relative">
-        <div class="footer">
-          <div class="position-absolute w-100 bottom-0 end-0">
-            <div class="d-flex justify-content-around">
-              <div class="">
-                <p class="text-light">
-                  © 2017 - 2022 Paramount Students. All rights reserved
-                </p>
-              </div>
-              <div class="footer-link">
-                <ul>
-                  <li><a href="">Paramountstudents.com</a></li>
-                  <li>
-                    <router-link to="/technical-support"
-                      >Technical Support</router-link
-                    >
-                  </li>
-                  <li><router-link to="/terms-privacy">Terms</router-link></li>
-                  <li><router-link to="/">Privacy</router-link></li>
-                  <li><router-link to="/faq">FAQ</router-link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    
   
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">

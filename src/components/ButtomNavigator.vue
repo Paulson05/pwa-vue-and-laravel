@@ -91,10 +91,10 @@ export default {
                 },
                 {
                     id: 7,
-                    title: "LogOut",
+                    title: "settings",
                     img: "logout.svg",
                     imgBlack: "settings.svg",
-                    linkRoute: "/login",
+                    linkRoute: "/setting",
                 },
 
             ],
