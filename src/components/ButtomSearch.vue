@@ -36,7 +36,7 @@
               </div>
                 </div>
               </div>
-       <div class="pt-4 row" >
+       <div class="pt-4 row " >
         
         <div class="col">
           <img :src="require('/src/assets/images/d-board/settings.svg')"
@@ -46,7 +46,7 @@
             <ul class="d-flex fs-6">
             <li class="cursor" >
               <img
-                class="px-2"
+                class=""
                 :src="require('/src/assets/images/d-board/notificaition.svg')"
                 alt=""
                
