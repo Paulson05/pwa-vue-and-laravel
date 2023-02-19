@@ -1,6 +1,6 @@
 <template lang="html">
     <div style=" background-color: rgba(224, 178, 79, 0.918); border-radius: 5px; margin-top: 0 !important ;">
-        <div class="col-12 d-flex justify-content-between">
+        <div class="d-flex justify-content-between">
        <div >
         <img
                           :src="require('/src/assets/images/d-img.svg')"
@@ -35,18 +35,12 @@
               </div>
                 </div>
               </div>
-       <div class="pt-4 row " >
-        
-        <div class="col">
-          <img :src="require('/src/assets/images/d-board/settings.svg')"
-                                        alt="logo" />
-        </div>
-          <div class="col">
-            <ul class="d-flex fs-6">
+              <div class="col-2 pt-4">
+            <ul class="">
             <li class="cursor" >
               <img
                 class=""
-                :src="require('/src/assets/images/d-board/notificaition.svg')"
+                :src="require('/src/assets/images/unread_icon.png')"
                 alt=""
                
               />
@@ -56,8 +50,6 @@
            
           </ul>
           </div>
-       
-       </div>
       </div>
     </div>
   </template>
