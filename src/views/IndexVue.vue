@@ -26,7 +26,7 @@
 
 
 
-  <main style="margin-top: 150px;">
+  <main style="margin-top: 150px; ">
     <router-view></router-view>
   </main>
 

@@ -1,27 +1,17 @@
 <template lang="html">
     <div class="main-container">
-      <LangModel />
-      <div class="container-fluid position-relative">
-        <div class="nav-logo">
-          <div
-            class="position-absolute d-flex w-100 pt-4 px-4 align-items-center justify-content-between"
-          >
-            
-          
-          </div>
-        </div>
-      </div>
+
     
-  
+    
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="banner position-relative">
-            <!-- <img
+            <img
               :src="require('/src/assets/images/banner.png')"
               height="100%"
               width="100%"
               alt=""
-            /> -->
+            />
             <div class="inner-login"></div>
           </div>
         </div>
@@ -108,10 +98,10 @@
     </div>
   </template>
   <script>
-      
+     
       export default {
         components: {
-         
+        
         },
         
         data() {
@@ -146,7 +136,14 @@
                   }
               },
   
-            
+              submit() {
+                  // this.$router.push("/email-verification");
+                  // this.$axios.post('login', {unique_id: this.form.userId, password: this.form.userPassword})
+                  const authSotre = useAuthStore()
+                  authSotre.login(this.form.userId, this.form.userPassword)
+                  // useAuthStore().login(this.form.userId, this.form.userPassword)
+                  // HTTP.post('login', {unique_id: this.form.userId, password: this.form.userPassword}).then(res => console.log(res)).error((err) => alert(err))
+              },
               dashbaord() {
                   localStorage.setItem("user", "isLoggedin");
                   return this.$router.push("/dashboard");

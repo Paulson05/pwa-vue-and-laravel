@@ -1,8 +1,9 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-// import { createPinia } from 'pinia'
+import { createPinia } from 'pinia'
 // import axiosPlugin from './plugins/axios';
+import './axios.js'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -23,11 +24,15 @@ import '../src/assets/theme.css';
 import ConfirmationService from 'primevue/confirmationservice';
 import InputText from 'primevue/inputtext';
 import ToastService from 'primevue/toastservice';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
 const app = createApp(App);
 
-// app.use(createPinia()) 
+app.use(createPinia()) 
 app.use(router);
+app.use(pinia)
 app.use(PrimeVue);
 app.use(ConfirmationService);
 app.use(ToastService);

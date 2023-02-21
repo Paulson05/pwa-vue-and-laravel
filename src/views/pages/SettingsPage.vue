@@ -15,7 +15,7 @@
                            </div>
                           
          </div>
-         <hr>
+   
          <div class="w-100 overflow-auto dashboard-fixed">
                 <div
                     class="admin-wrapper bg-light flex-column flex-nowrap flex-shrink-1 flex-grow-1 mb-0 justify-content-center align-items-center">
